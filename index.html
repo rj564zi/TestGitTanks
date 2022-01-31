@@ -13,17 +13,21 @@
 				font-size: 15px;
 				margin-top: -10px;
 				margin-left: 80px;
-
-
-
-
 			}
 			body{
 				background-color: #000000;
-
-
+				max-font-size: 100%;
+				overflow: hidden;
+				margin-top: auto;
+				/*margin-left: 21%;*/
+				/*margin-right: 21%;*/
+			}
+			canvas{
+				width: 100%;
+				height: 100%;
 			}
 			h2{
+
 				color: #f8f6f6;
 				right: 50px;
 				font-size: 15px;
@@ -31,6 +35,7 @@
 				margin-left: 210px;
 			}
 			h3{
+
 				color: #24d90f;
 				right: 50px;
 				font-size: 15px;
@@ -38,13 +43,15 @@
 				margin-left: 300px;
 			}
 			h4{
+
 				color: #f8f6f6;
 				font-size: 15px;
 				margin-top: -34px;
 				text-align: right;
-				margin-right: 110px;
+				margin-right: 117px;
 			}
 			h5{
+
 				color: #f8f6f6;
 				font-size: 15px;
 				margin-top: -37px;
@@ -52,19 +59,181 @@
 				margin-right: 45px;
 			}
 			H6{
+
 				color: #f8f6f6;
+
 				font-size: 15px;
 				margin-top: -42px;
 				text-align: right;
 				margin-right: 110px;
 			}
 			p{
+
 				color: #f8f6f6;
 				font-size: 15px;
 				margin-top: -51px;
 				text-align: right;
-				margin-right: 900px;
+				margin-right: 719px;
+				top: 47%;
+				width: 100%;
+				z-index: 100;
 			}
+			#count{
+				position: absolute;
+				color: #f8f6f6;
+				top: 98.3%;
+				right: -5.2%;
+				width: 100%;
+
+				z-index: 100;
+				display:block;
+			}
+			#count1{
+				position: absolute;
+				color: #f8f6f6;
+				top: 100.5%;
+				right: 32.1%;
+				width: 100%;
+				text-align: center;
+				z-index: 100;
+				display:block;
+			}
+
+			#count5{
+				position: absolute;
+				color: #f8f6f6;
+				top: 102%;
+				right: 1%;
+				width: 100%;
+				z-index: 100;
+				display:block;
+			}
+			#count4{
+				position: absolute;
+				color: #f8f6f6;
+				top: 101.6%;
+				right: -43%;
+				width: 100%;
+				text-align: center;
+				z-index: 100;
+				display:block;
+			}
+			#count7{
+				position: absolute;
+				color: #f8f6f6;
+				top: 104%;
+				width: 100%;
+				text-align: center;
+				z-index: 100;
+				display:block;
+			}
+			#info {
+				position: absolute;
+				color: #f8f6f6;
+				top: 47%;
+				width: 100%;
+				text-align: center;
+				z-index: 100;
+				display:block;
+			}
+			#help1{
+				position: absolute;
+				color: #000000;
+				top: 10%;
+				width: 100%;
+				left: 10%;
+
+				z-index: 100;
+				display:block;
+			}
+			#help2{
+				position: absolute;
+				color: #000000;
+				top: 14%;
+				left: 10%;
+				width: 100%;
+
+				z-index: 100;
+				display:block;
+			}
+			#help3{
+				position: absolute;
+				color: #000000;
+				top: 18%;
+				left: 10%;
+				width: 100%;
+
+				z-index: 100;
+				display:block;
+			}
+			#help4{
+				position: absolute;
+				color: #000000;
+				top: 22%;
+				left: 10%;
+				width: 100%;
+
+				z-index: 100;
+				display:block;
+			}
+			#help5{
+				position: absolute;
+				color: #000000;
+				top: 26%;
+				left: 10%;
+				width: 100%;
+
+				z-index: 100;
+				display:block;
+			}
+			#help6{
+				position: absolute;
+				color: #000000;
+				top: 30%;
+				left: 10%;
+				width: 100%;
+
+				z-index: 100;
+				display:block;
+			}
+			#help7{
+				position: absolute;
+				color: #000000;
+				top: 34%;
+				left: 10%;
+				width: 100%;
+
+				z-index: 100;
+				display:block;
+			}
+			#help8{
+				position: absolute;
+				color: #000000;
+				top: 38%;
+				left: 10%;
+				width: 100%;
+
+				z-index: 100;
+				display:block;
+			}
+			#help9{
+				position: absolute;
+				color: #ffffff;
+				font-size: 15px;
+				top: 0.5%;
+				left: 5.5%;
+				width: 100%;
+
+				z-index: 100;
+				display:block;
+			}
+			/*canvas {*/
+
+			/*	width: 100vw;*/
+			/*	height: 100vh;*/
+			/*	display: block;*/
+			/*}*/
+
 		</style>
 	</head>
 
@@ -79,12 +248,13 @@
 
 
 
-
 			<script src="js/ThreeScene.js">
 
 
 
+
 			</script>
+
 			<h1 id="count"></h1>
 			<h2 id="count1"></h2>
 			<h3 id="count3"></h3>
@@ -92,9 +262,21 @@
 
 			<h4 id="count4"></h4>
 			<h5 id="count5"></h5>
-			<h6 id="count6"> </h6>
+			<h6 id="count6"></h6>
 
 			<p id ="count7">Obtiaznost</p>
+			<div id="info">Description</div>
+
+
+			<div id="help1"></div>
+			<div id="help2"></div>
+			<div id="help3"></div>
+			<div id="help4"></div>
+			<div id="help5"></div>
+			<div id="help6"></div>
+			<div id="help7"></div>
+			<div id="help8"></div>
+			<div id="help9"></div>
 
 
 
